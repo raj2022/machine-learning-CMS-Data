@@ -1,0 +1,47 @@
+\chapter{\label{intro}Introduction}
+% \linenumbers
+% Managing the large amount of data from the Large Hadron Collider (LHC) collisions is a major challenge for CMS physicists.As the detector produces millions of data per second, precisely around 500 tetrabytes of data per second. After filtering of the collision events online within a fraction of a second, many bytes of data are saved offline for further analysis. Since, there is a plan to increase the luminosity of the LHC (upto 5 times of the present), it would be very challenging in the future. To meet this challenge, CMS physicists are using state-of-the-art machine learning methods at every stage of the data processing, to improve the experiment. From real-time filtering to offline data analysis, they are using machine learning to improve physics performance, accelerate computations, improve data quality, and optimize searches for new physics signatures.\\
+
+The machine learning algorithms, which is general and not task-specific, are modeled towards improving the  performance on some given task by training on more and more data\cite{1-5}. The training of the machine depends on the past data. The data split in training, validation set and test subsets. The first two are often combined together, where a different chunk of the data is used at each training step to estimate the predictive power of a model. The ultimate goal of the model is a generalization of its ability as to how well it performs over unseen data ot the test data,  which can be real or future data. To avoid the problem of overfitting in the model, in ML approximate solutions are preferred: where the goal is to learn all the essential features of the data and further generalize the model[\cite{4}]. \\
+
+
+This project report is based on case studies using simulated data for the CMS detector. Our primary objective is to make such a model search for the rare processes of the resonance particle such as Tprime using machine learning techniques. Tprime(T') is one vector-like quark, which decays into a standard model(SM) top quark and a Higgs boson with decaying into two photons.  \cite{12}.
+
+
+% Discuss about T'
+% With the increasing complexity of events in high energy physics, the importance
+% of multivariate analysis for LHC has been recognized before the start of data taking.
+% The main motivation was to go beyond the traditional methods for event selection by applying series of cuts on individual variables, and be able to use correlations
+% and more intricate patterns in the multidimensional data.\\
+
+Compact Muon Solenoid (or CMS) detector located at one of these four collision points of the LHC[[\cite{15-20}]. It is designed to observe any new physics phenomena that the LHC might reveal. CMS acts as a giant, high-speed camera, taking 3D "photographs" of particle collisions from all directions up to 40 million times per second. It is 15m in diameter. The central device around which the experiment is built is its magnet, which carries a total magnetic field of 4 Tesla(4T). The Charged particle trajectories after the collision are measured by the silicon pixel and strip sub-detectors, covering 0 <$\phi$ <2$\pi$ in azimuth and $|\eta|$ < 2.5, where the pseudo rapidity $\eta$ is defined as 
+ \begin{equation*}
+     \eta = -ln[\tan \theta/2],
+ \end{equation*}
+ 
+ where $\theta$ is the polar angle of trajectory of the particle with counterclockwise beam direction. Within the field
+volume, the silicon detectors are surrounded by a crystal electromagnetic calorimeter and a brass/scintillator hadron calorimeter that provides high resolution energy measurement of photons, electrons, and hadronic jets.\\
+
+Machine learning has very vast applications in High energy physics(HEP). Earlier, a decision function often used as decision tree. These decision trees also behave like a natural tree-like model to make the decision, starting at the root, further climbing up the branches and then reaching to the leaves, where leaves behave like decision. For classification problem, each leaf represents our decisions to assign the data into classes, whether it is binary or multiclass classifications\cite{7-8}. The most widely used machine learning techniques in HEP are boosted decision trees(BDT), XgBoosts, etc \dots\\
+
+
+
+Neural networks, also known as artificial neural networks(ANN), are structures inspired by the human brain and also mimic the connectivity of biological signals to one another. The neurons and synapses have been replaced with connected layers of
+nodes ( neurons) and edges. A node takes inputs as real numbers (a weighted sum of the connected outputs from the previous layer) and performs a non-linear transformation to form its output. These non-linear transformation functions are known as the \textbf{activation function}. Typical activation functions are: sigmoid (logistic) and tanh where the output is limited below  % [\url{https://www.phys.ufl.edu/~avery/ivdgl/itr2001/proposal_all.pdf}]  
+for any input values, and the rectified linear unit ReLU (max(0, x) or the positive part of the argument.\\
+Each  neural network consists of at least an input, an output, and one or more hidden layers. This is part of Deep learning. We represent deep NN as DNN. The learning can be supervised depending on pairs of inputs with known outputs for training, or unsupervised, or semi-supervised. A cost or loss function measures the “distance” between the current and the desired outcomes, where our main goal is to make a loss as little as possible to train the model. Classical optimization aims to minimize the cost function on the available (training) data, with or main goal in ML is to generalize, or minimize the cost best, on the unseen or the test data. At each step, the weights for all the edges can be adjusted by backpropagation based on the differentiation chain rule to reduce the cost function by small amounts. This is the stochastic gradient descent (SGD)\cite{4}.\\
+
+Here, in this project report, we will discuss all the basic concepts related to machine learning in detail. The outline of this report are as follows: \autoref{Method}  discusses the basic concepts related to machine learning and deep learning(DNN), and further about the simulated data sample used for the separation of signal and background is discussed in \autoref{d}. We will discuss the results and outputs obtained after DNN training in \autoref{results}, and finally, conclude this report with the conclusion in \autoref{summary}. 
+
+
+% file:///home/sraj/Documents/M.sc._Project/Date_WISE/nov_21/9_nov/Introduction%20to%20Machine%20Learning.html
+\setcounter{equation}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+%\baselineskip 24pt
+
+
+    
+
+
+
